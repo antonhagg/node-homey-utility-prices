@@ -525,9 +525,9 @@ export class PriceComparer {
      */
     currentPriceAmongNextHoursComparer(args: { num_hours: number, next_hours: number }, state: { high_price: boolean }, curTime?: Moment): boolean {
         if (args.num_hours <= 0
-            || args.num_hours >= 24
+            || args.num_hours >= 35
             || args.next_hours <= 0
-            || args.next_hours >= 24
+            || args.next_hours >= 35
         ) {
             this.logDebug(`currentPriceAmongNextHoursComparer: missing params`);
             return false;
